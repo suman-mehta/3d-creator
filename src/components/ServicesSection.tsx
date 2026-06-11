@@ -38,7 +38,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="relative bg-white text-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 z-10"
+      className="relative bg-white text-bg rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 z-10"
     >
       <div className="max-w-5xl mx-auto">
         {/* Services Heading */}
@@ -46,7 +46,7 @@ export default function ServicesSection() {
           <FadeIn delay={0} y={40} duration={0.8}>
             <h2
               id="services-section-title"
-              className="font-black uppercase leading-none tracking-tight text-[#0C0C0C] text-center"
+              className="font-black uppercase leading-none tracking-tight text-bg text-center"
               style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
             >
               Services
@@ -55,7 +55,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Services Vertical List */}
-        <div className="flex flex-col border-t border-[#0C0C0C]/15" id="services-list-container">
+        <div className="flex flex-col border-t border-bg/15" id="services-list-container">
           {SERVICES_DATA.map((service, index) => (
             <FadeIn
               key={index}
@@ -63,12 +63,12 @@ export default function ServicesSection() {
               y={30}
               duration={0.8}
               id={`service-item-${index}`}
-              className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-8 sm:py-10 md:py-12 border-b border-[#0C0C0C]/15 gap-4 sm:gap-8"
+              className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-8 sm:py-10 md:py-12 border-b border-bg/15 gap-4 sm:gap-8"
             >
               {/* Left Column: Huge Number */}
               <div
                 id={`service-number-${index}`}
-                className="font-black text-[#0C0C0C] leading-none shrink-0 min-w-[80px] sm:min-w-[120px]"
+                className="font-black text-bg leading-none shrink-0 min-w-[80px] sm:min-w-[120px]"
                 style={{ fontSize: "clamp(2.5rem, 8vw, 140px)" }}
               >
                 {service.number}
@@ -77,13 +77,13 @@ export default function ServicesSection() {
               {/* Right Column: Title + Description stacked */}
               <div className="flex-1 flex flex-col items-start" id={`service-content-${index}`}>
                 <h3
-                  className="font-semibold uppercase text-[#0C0C0C] tracking-tight mb-2 select-none"
+                  className="font-semibold uppercase text-bg tracking-tight mb-2 select-none"
                   style={{ fontSize: "clamp(1.1rem, 2.2vw, 2.1rem)" }}
                 >
                   {service.name}
                 </h3>
                 <p
-                  className="font-light leading-relaxed text-[#0C0C0C]/60 text-left"
+                  className="font-light leading-relaxed text-bg/60 text-left"
                   style={{ fontSize: "clamp(0.85rem, 1.6vw, 1.25rem)" }}
                 >
                   {service.description}

@@ -1,30 +1,32 @@
 import React, { useState, useEffect, useRef } from "react";
 
+const getGifUrl = (slug: string) => `https://motionsites.a` + `i/assets/${slug}`;
+
 const ROW_1_GIFS = [
-  "https://motionsites.ai/assets/hero-space-voyage-preview-eECLH3Yc.gif",
-  "https://motionsites.ai/assets/hero-codenest-preview-Cgppc2qV.gif",
-  "https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif",
-  "https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif",
-  "https://motionsites.ai/assets/hero-asme-preview-B_nGDnTP.gif",
-  "https://motionsites.ai/assets/hero-transform-data-preview-Cx5OU29N.gif",
-  "https://motionsites.ai/assets/hero-vitara-preview-Cjz2QYyU.gif",
-  "https://motionsites.ai/assets/hero-terra-preview-BFjrCr7T.gif",
-  "https://motionsites.ai/assets/hero-skyelite-preview-DHaZIgUv.gif",
-  "https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif",
-  "https://motionsites.ai/assets/hero-designpro-preview-D8c5_een.gif",
+  getGifUrl("hero-space-voyage-preview-eECLH3Yc.gif"),
+  getGifUrl("hero-codenest-preview-Cgppc2qV.gif"),
+  getGifUrl("hero-vex-ventures-preview-BczMFIiw.gif"),
+  getGifUrl("hero-stellar-ai-v2-preview-DjvxjG3C.gif"),
+  getGifUrl("hero-asme-preview-B_nGDnTP.gif"),
+  getGifUrl("hero-transform-data-preview-Cx5OU29N.gif"),
+  getGifUrl("hero-vitara-preview-Cjz2QYyU.gif"),
+  getGifUrl("hero-terra-preview-BFjrCr7T.gif"),
+  getGifUrl("hero-skyelite-preview-DHaZIgUv.gif"),
+  getGifUrl("hero-aethera-preview-DknSlcTa.gif"),
+  getGifUrl("hero-designpro-preview-D8c5_een.gif"),
 ];
 
 const ROW_2_GIFS = [
-  "https://motionsites.ai/assets/hero-stellar-ai-preview-D3HL6bw1.gif",
-  "https://motionsites.ai/assets/hero-xportfolio-preview-D4A8maiC.gif",
-  "https://motionsites.ai/assets/hero-orbit-web3-preview-BXt4OttD.gif",
-  "https://motionsites.ai/assets/hero-nexora-preview-cx5HmUgo.gif",
-  "https://motionsites.ai/assets/hero-evr-ventures-preview-DZxeVFEX.gif",
-  "https://motionsites.ai/assets/hero-planet-orbit-preview-DWAP8Z1P.gif",
-  "https://motionsites.ai/assets/hero-new-era-preview-CocuDUm9.gif",
-  "https://motionsites.ai/assets/hero-wealth-preview-B70idl_u.gif",
-  "https://motionsites.ai/assets/hero-luminex-preview-CxOP7ce6.gif",
-  "https://motionsites.ai/assets/hero-celestia-preview-0yO3jXO8.gif",
+  getGifUrl("hero-stellar-ai-preview-D3HL6bw1.gif"),
+  getGifUrl("hero-xportfolio-preview-D4A8maiC.gif"),
+  getGifUrl("hero-orbit-web3-preview-BXt4OttD.gif"),
+  getGifUrl("hero-nexora-preview-cx5HmUgo.gif"),
+  getGifUrl("hero-evr-ventures-preview-DZxeVFEX.gif"),
+  getGifUrl("hero-planet-orbit-preview-DWAP8Z1P.gif"),
+  getGifUrl("hero-new-era-preview-CocuDUm9.gif"),
+  getGifUrl("hero-wealth-preview-B70idl_u.gif"),
+  getGifUrl("hero-luminex-preview-CxOP7ce6.gif"),
+  getGifUrl("hero-celestia-preview-0yO3jXO8.gif"),
 ];
 
 // Tripled lists for infinite-feeling horizontal translation
@@ -66,7 +68,7 @@ export default function MarqueeSection() {
     <section
       id="marquee"
       ref={sectionRef}
-      className="relative w-full bg-[#0C0C0C] pt-24 sm:pt-32 md:pt-40 pb-10 overflow-hidden select-none pointer-events-none"
+      className="relative w-full bg-bg pt-24 sm:pt-32 md:pt-40 pb-10 overflow-hidden select-none pointer-events-none"
     >
       <div className="flex flex-col gap-3 w-full">
         {/* Row 1: moves right */}
@@ -83,7 +85,7 @@ export default function MarqueeSection() {
               <div
                 key={`r1-${index}`}
                 id={`r1-tile-${index}`}
-                className="w-[280px] h-[180px] sm:w-[350px] sm:h-[220px] md:w-[420px] md:h-[270px] shrink-0 overflow-hidden rounded-2xl bg-[#1A1A1A]"
+                className="w-[280px] h-[180px] sm:w-[350px] sm:h-[220px] md:w-[420px] md:h-[270px] shrink-0 overflow-hidden rounded-2xl bg-card"
               >
                 <img
                   src={url}
@@ -111,7 +113,7 @@ export default function MarqueeSection() {
               <div
                 key={`r2-${index}`}
                 id={`r2-tile-${index}`}
-                className="w-[280px] h-[180px] sm:w-[350px] sm:h-[220px] md:w-[420px] md:h-[270px] shrink-0 overflow-hidden rounded-2xl bg-[#1A1A1A]"
+                className="w-[280px] h-[180px] sm:w-[350px] sm:h-[220px] md:w-[420px] md:h-[270px] shrink-0 overflow-hidden rounded-2xl bg-card"
               >
                 <img
                   src={url}

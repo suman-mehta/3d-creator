@@ -19,49 +19,44 @@ export default function HeroSection({ onContactClick }: HeroSectionProps) {
   return (
     <section
       id="hero"
-      className="relative w-full h-screen min-h-[600px] flex flex-col justify-between overflow-x-hidden bg-[#0C0C0C]"
+      className="relative w-full h-screen min-h-[600px] flex flex-col justify-between overflow-x-hidden bg-bg"
       style={{ overflowX: "clip" }}
     >
       {/* 1. Navbar */}
       <FadeIn delay={0} y={-20} duration={0.8} className="w-full z-20">
         <nav
           id="hero-navbar"
-          className="flex items-center justify-between px-6 md:px-10 pt-6 md:pt-8 text-[#D7E2EA]"
+          className="flex items-center justify-between px-6 md:px-10 pt-6 md:pt-8 text-text"
         >
           {/* Logo / Suman sign */}
-          <button
+          <button className="font-black tracking-tight text-xl sm:text-2xl hover:opacity-70 transition-opacity cursor-pointer uppercase focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none rounded px-1"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="font-black tracking-tight text-xl sm:text-2xl hover:opacity-70 transition-opacity cursor-pointer uppercase"
           >
             Suman Mehta
           </button>
 
           {/* Links */}
           <div className="flex items-center gap-4 sm:gap-6 md:gap-1 tracking-wider font-medium text-sm md:text-lg lg:text-[1.4rem] uppercase">
-            <button
+            <button className="px-2 transition-opacity duration-200 hover:opacity-70 cursor-pointer focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none rounded"
               onClick={() => scrollTo("about")}
-              className="px-2 transition-opacity duration-200 hover:opacity-70 cursor-pointer"
             >
               About
             </button>
             <span className="opacity-20 select-none text-[10px] md:text-base">/</span>
-            <button
+            <button className="px-2 transition-opacity duration-200 hover:opacity-70 cursor-pointer focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none rounded"
               onClick={() => scrollTo("services")}
-              className="px-2 transition-opacity duration-200 hover:opacity-70 cursor-pointer"
             >
               Price
             </button>
             <span className="opacity-20 select-none text-[10px] md:text-base">/</span>
-            <button
+            <button className="px-2 transition-opacity duration-200 hover:opacity-70 cursor-pointer focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none rounded"
               onClick={() => scrollTo("projects")}
-              className="px-2 transition-opacity duration-200 hover:opacity-70 cursor-pointer"
             >
               Projects
             </button>
             <span className="opacity-20 select-none text-[10px] md:text-base">/</span>
-            <button
+            <button className="px-2 transition-opacity duration-200 hover:opacity-70 cursor-pointer text-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none rounded"
               onClick={onContactClick}
-              className="px-2 transition-opacity duration-200 hover:opacity-70 cursor-pointer text-[#B600A8]"
             >
               Contact
             </button>
@@ -114,7 +109,7 @@ export default function HeroSection({ onContactClick }: HeroSectionProps) {
           <FadeIn delay={0.35} y={20} duration={0.8}>
             <p
               id="hero-left-desc-p"
-              className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug text-left"
+              className="text-text font-light uppercase tracking-wide leading-snug text-left"
               style={{ fontSize: "clamp(0.75rem, 1.4vw, 1.5rem)", maxWidth: "clamp(160px, 20vw, 260px)" }}
             >
               a 3d creator driven by crafting striking and unforgettable projects

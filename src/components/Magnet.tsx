@@ -39,7 +39,7 @@ export default function Magnet({
 
       // Determine the activation threshold (distance from edge or center)
       // We will check distance of cursor to the nearest point of the element box,
-      // or simply from center. A distance from center is much more robust.
+      // or simply from center. A distance from center is much more reliable.
       const distance = Math.hypot(distX, distY);
       const radius = Math.max(rect.width, rect.height) / 2;
 
