@@ -44,11 +44,18 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
 
     const whatsappUrl = `https://wa.me/917739105800?text=${encodeURIComponent(whatsappText)}`;
 
-    // Programmatic redirect to open WhatsApp
-    setTimeout(() => {
-      window.open(whatsappUrl, "_blank");
-      setStatus("success");
-    }, 1200);
+    // Redirect to WhatsApp immediately in the user-triggered thread to bypass popup blockers
+    try {
+      const win = window.open(whatsappUrl, "_blank");
+      if (!win) {
+        // Fallback redirect if window.open is blocked
+        window.location.href = whatsappUrl;
+      }
+    } catch (err) {
+      window.location.href = whatsappUrl;
+    }
+
+    setStatus("success");
   };
 
   const handleChange = (
