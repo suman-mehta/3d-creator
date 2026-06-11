@@ -42,19 +42,10 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
       `*Service Required:* ${selectedService}\n\n` +
       `*Message:*\n"${formData.message}"`;
 
-    const whatsappUrl = `https://wa.me/917739105800?text=${encodeURIComponent(whatsappText)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=917739105800&text=${encodeURIComponent(whatsappText)}`;
 
-    // Redirect to WhatsApp immediately in the user-triggered thread to bypass popup blockers
-    try {
-      const win = window.open(whatsappUrl, "_blank");
-      if (!win) {
-        // Fallback redirect if window.open is blocked
-        window.location.href = whatsappUrl;
-      }
-    } catch (err) {
-      window.location.href = whatsappUrl;
-    }
-
+    // Redirect current tab directly to WhatsApp to guarantee launch and bypass all popup blockers
+    window.location.href = whatsappUrl;
     setStatus("success");
   };
 
