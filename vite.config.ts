@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/3d-creator/',
+    base: '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
