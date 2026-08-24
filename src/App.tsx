@@ -82,7 +82,7 @@ export default function App() {
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="https://www.instagram.com/itz_suman_mehta__"
+                href="https://www.instagram.com/suman_mehta.me"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-primary transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none rounded"
