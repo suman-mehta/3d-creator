@@ -12,7 +12,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import ContactFormModal from "./components/ContactFormModal";
 import SlopDiagnostics from "./components/SlopDiagnostics";
 import { motion, AnimatePresence } from "motion/react";
-import { Sparkles, ArrowRight, Instagram, Twitter, Heart, Check } from "lucide-react";
+import { Sparkles, ArrowRight, Instagram, Twitter, Github, Heart, Check } from "lucide-react";
 
 export default function App() {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -30,6 +30,8 @@ export default function App() {
       id="main-app-wrapper"
       className="relative w-full min-h-screen bg-bg text-text font-sans antialiased selection:bg-primary selection:text-white"
       style={{ overflowX: "clip" }}
+      itemScope
+      itemType="https://schema.org/Person"
     >
       {/* 3D Cosmic Stars / Particle Background Decorators */}
       <div className="absolute top-1/4 left-1/4 w-[1px] h-[1px] bg-white opacity-40 shadow-[0_0_12px_1px_rgba(255,255,255,0.8)] rounded-full pointer-events-none" />
@@ -61,10 +63,10 @@ export default function App() {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
           {/* Brand/Signature */}
           <div className="flex flex-col gap-2">
-            <h4 className="text-xl font-bold uppercase text-text tracking-tighter">
-              Suman Mehta <span className="text-primary">•</span> 3D Creator
+            <h4 className="text-xl font-bold uppercase text-text tracking-tighter" itemProp="name">
+              Suman Mehta <span className="text-primary">•</span> <span itemProp="jobTitle">3D Creator</span>
             </h4>
-            <p className="text-xs max-w-[280px] leading-relaxed">
+            <p className="text-xs max-w-[280px] leading-relaxed" itemProp="description">
               Crafting striking visual experiences, 3D systems, animations, and conversion-focused designs worldwide.
             </p>
           </div>
@@ -73,20 +75,32 @@ export default function App() {
           <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
             <div className="flex items-center gap-4">
               <a
+                href="https://github.com/suman-mehta"
+                target="_blank"
+                rel="me noreferrer"
+                className="hover:text-primary transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none rounded"
+                aria-label="Suman Mehta on GitHub"
+                title="Suman Mehta on GitHub"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+              <a
                 href="https://x.com/itz_suman_mehta"
                 target="_blank"
-                rel="noreferrer"
+                rel="me noreferrer"
                 className="hover:text-primary transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none rounded"
-                aria-label="Follow Suman on Twitter"
+                aria-label="Follow Suman Mehta on Twitter / X"
+                title="Follow Suman Mehta on Twitter / X"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
                 href="https://www.instagram.com/suman_mehta.me"
                 target="_blank"
-                rel="noreferrer"
+                rel="me noreferrer"
                 className="hover:text-primary transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none rounded"
-                aria-label="Follow Suman on Instagram"
+                aria-label="Follow Suman Mehta on Instagram"
+                title="Follow Suman Mehta on Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -103,7 +117,7 @@ export default function App() {
         <div className="max-w-5xl mx-auto mt-12 pt-6 border-t border-text/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
           <p>© {new Date().getFullYear()} Suman Mehta. All rights reserved.</p>
           <p className="flex items-center gap-1">
-            Crafted with <Heart className="h-3.5 w-3.5 text-primary fill-primary" /> from Katihar
+            Crafted with <Heart className="h-3.5 w-3.5 text-primary fill-primary" /> from Katihar, Bihar
           </p>
         </div>
       </footer>

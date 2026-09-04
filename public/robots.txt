@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Directives for major search crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Disallow build artifacts and private directories
+Disallow: /src/
+Disallow: /node_modules/
+
+# Canonical Sitemaps
+Sitemap: https://sumanmehta.in/sitemap.xml
+Sitemap: https://sumanmata.in/sitemap.xml

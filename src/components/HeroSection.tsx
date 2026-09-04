@@ -70,8 +70,10 @@ export default function HeroSection({ onContactClick }: HeroSectionProps) {
           <FadeIn delay={0.15} y={40} duration={0.9} className="w-full text-center">
             <h1
               id="hero-massive-heading"
+              aria-label="Suman Mehta — 3D Creator"
               className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw] mt-6 sm:mt-4 md:-mt-5 select-none"
             >
+              <span className="sr-only">Suman Mehta — 3D Creator, Motion Designer &amp; Creative Technologist: </span>
               Hi, i&apos;m Suman
             </h1>
           </FadeIn>
@@ -93,7 +95,11 @@ export default function HeroSection({ onContactClick }: HeroSectionProps) {
             >
               <img
                 src="https://raw.githubusercontent.com/suman-mehta/Bihar-Bijli/refs/heads/main/suman%20mehta%203D.png"
-                alt="Portrait of Suman Mehta"
+                alt="Suman Mehta — 3D Creator, Motion Designer and Creative Technologist"
+                width={520}
+                height={520}
+                loading="eager"
+                fetchPriority="high"
                 className="w-full h-auto object-contain pointer-events-none drop-shadow-[0_25px_60px_rgba(182,0,168,0.35)]"
                 referrerPolicy="no-referrer"
               />

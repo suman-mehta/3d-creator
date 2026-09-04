@@ -89,8 +89,9 @@ export default function MarqueeSection() {
               >
                 <img
                   src={url}
-                  alt={`Creative 3D preview row 1 - ${index}`}
+                  alt={`3D Animation and Motion Graphic preview 1-${index + 1} by Suman Mehta`}
                   loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
                   referrerPolicy="no-referrer"
                 />
@@ -117,8 +118,9 @@ export default function MarqueeSection() {
               >
                 <img
                   src={url}
-                  alt={`Creative 3D preview row 2 - ${index}`}
+                  alt={`3D Spatial Interface and Motion preview 2-${index + 1} by Suman Mehta`}
                   loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
                   referrerPolicy="no-referrer"
                 />

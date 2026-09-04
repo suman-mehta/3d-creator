@@ -55,7 +55,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Services Vertical List */}
-        <div className="flex flex-col border-t border-bg/15" id="services-list-container">
+        <div className="flex flex-col border-t border-bg/15" id="services-list-container" itemScope itemType="https://schema.org/ItemList">
           {SERVICES_DATA.map((service, index) => (
             <FadeIn
               key={index}
@@ -75,16 +75,18 @@ export default function ServicesSection() {
               </div>
 
               {/* Right Column: Title + Description stacked */}
-              <div className="flex-1 flex flex-col items-start" id={`service-content-${index}`}>
+              <div className="flex-1 flex flex-col items-start" id={`service-content-${index}`} itemScope itemType="https://schema.org/Service">
                 <h3
                   className="font-semibold uppercase text-bg tracking-tight mb-2 select-none"
                   style={{ fontSize: "clamp(1.1rem, 2.2vw, 2.1rem)" }}
+                  itemProp="name"
                 >
                   {service.name}
                 </h3>
                 <p
                   className="font-light leading-relaxed text-bg/60 text-left"
                   style={{ fontSize: "clamp(0.85rem, 1.6vw, 1.25rem)" }}
+                  itemProp="description"
                 >
                   {service.description}
                 </p>

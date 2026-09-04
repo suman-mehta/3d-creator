@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { runSlopScan, ScanResult, SlopIssue } from "../utils/slopScanner";
+import { runSlopScan, ScanResult, SlopIssue, CategoryScore } from "../utils/slopScanner";
 import {
   AlertTriangle,
   X,
@@ -30,7 +30,7 @@ export default function SlopDiagnostics() {
   // Vite raw glob import - reads files live at build/dev time
   const fetchRawFiles = () => {
     try {
-      const rawModules = import.meta.glob(
+      const rawModules = (import.meta as any).glob(
         [
           "./*.tsx",
           "../App.tsx",
@@ -227,32 +227,33 @@ export default function SlopDiagnostics() {
                     </div>
                   </div>
 
-                  {/* Category Scores */}
-                  <div className="flex flex-col gap-2">
-                    <span className="text-[9px] uppercase font-mono tracking-widest text-[#D7E2EA]/40 mb-1 px-1">
-                      Scoring Categories
-                    </span>
-                    {Object.entries(scanResult.categories).map(([key, cat]) => {
-                      const isSelected = activeTab === key;
-                      const catRating = cat.score;
-                      return (
-                        <button
-                          key={key}
-                          onClick={() => setActiveTab(isSelected ? "all" : key)}
-                          className={`flex flex-col text-left px-3.5 py-2.5 rounded-xl border transition-all cursor-pointer relative overflow-hidden group ${
-                            isSelected
-                              ? "bg-[#16161f] border-[#B600A8]/45 text-[#D7E2EA]"
-                              : "bg-[#121216]/50 border-[#D7E2EA]/5 text-[#D7E2EA]/60 hover:bg-[#131318]"
-                          }`}
-                        >
-                          <div className="flex items-center justify-between w-full mb-1">
-                            <span className="text-[11px] font-bold tracking-wide uppercase font-mono truncate">
-                              {cat.name}
-                            </span>
-                            <span className="text-[10px] font-mono font-semibold" style={{ color: catRating > 80 ? '#22C55E' : catRating > 50 ? '#EAB308' : '#EF4444' }}>
-                              {Math.round(catRating)}%
-                            </span>
-                          </div>
+                    {/* Category Scores */}
+                    <div className="flex flex-col gap-2">
+                      <span className="text-[9px] uppercase font-mono tracking-widest text-[#D7E2EA]/40 mb-1 px-1">
+                        Scoring Categories
+                      </span>
+                      {Object.entries(scanResult.categories).map(([key, cat]) => {
+                        const category = cat as CategoryScore;
+                        const isSelected = activeTab === key;
+                        const catRating = category.score;
+                        return (
+                          <button
+                            key={key}
+                            onClick={() => setActiveTab(isSelected ? "all" : key)}
+                            className={`flex flex-col text-left px-3.5 py-2.5 rounded-xl border transition-all cursor-pointer relative overflow-hidden group ${
+                              isSelected
+                                ? "bg-[#16161f] border-[#B600A8]/45 text-[#D7E2EA]"
+                                : "bg-[#121216]/50 border-[#D7E2EA]/5 text-[#D7E2EA]/60 hover:bg-[#131318]"
+                            }`}
+                          >
+                            <div className="flex items-center justify-between w-full mb-1">
+                              <span className="text-[11px] font-bold tracking-wide uppercase font-mono truncate">
+                                {category.name}
+                              </span>
+                              <span className="text-[10px] font-mono font-semibold" style={{ color: catRating > 80 ? '#22C55E' : catRating > 50 ? '#EAB308' : '#EF4444' }}>
+                                {Math.round(catRating)}%
+                              </span>
+                            </div>
                           {/* Mini Progress Bar */}
                           <div className="w-full h-1 bg-[#1d1d24] rounded-full overflow-hidden">
                             <div

@@ -66,7 +66,10 @@ function ProjectCard({ project, index, totalCards, onLiveClick }: ProjectCardPro
       ref={cardContainerRef}
       id={`project-card-container-${index}`}
       className="relative w-full h-[95vh] sm:h-[90vh] md:h-[85vh] mt-10 md:mt-16 flex items-start justify-center"
+      itemScope
+      itemType="https://schema.org/CreativeWork"
     >
+      <meta itemProp="creator" content="Suman Mehta" />
       <motion.div
         style={{
           scale,
@@ -91,10 +94,10 @@ function ProjectCard({ project, index, totalCards, onLiveClick }: ProjectCardPro
 
             {/* Category and Title group */}
             <div>
-              <div className="flex items-center gap-1.5 text-primary text-[10px] sm:text-xs font-semibold uppercase tracking-widest mb-0.5 select-none">
+              <div className="flex items-center gap-1.5 text-primary text-[10px] sm:text-xs font-semibold uppercase tracking-widest mb-0.5 select-none" itemProp="genre">
                 <Sparkles className="h-3 w-3" /> {project.category} project
               </div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase text-text tracking-tighter select-none">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase text-text tracking-tighter select-none" itemProp="name">
                 {project.name}
               </h3>
             </div>
@@ -115,7 +118,11 @@ function ProjectCard({ project, index, totalCards, onLiveClick }: ProjectCardPro
             >
               <img
                 src={project.col1Image1}
-                alt={`${project.name} Rendering Detail 1`}
+                alt={`${project.name} — 3D Rendering Detail 1 by Suman Mehta`}
+                width={500}
+                height={220}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 select-none"
                 referrerPolicy="no-referrer"
               />
@@ -128,7 +135,11 @@ function ProjectCard({ project, index, totalCards, onLiveClick }: ProjectCardPro
             >
               <img
                 src={project.col1Image2}
-                alt={`${project.name} Rendering Detail 2`}
+                alt={`${project.name} — 3D Rendering Detail 2 by Suman Mehta`}
+                width={500}
+                height={320}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 select-none"
                 referrerPolicy="no-referrer"
               />
@@ -140,7 +151,11 @@ function ProjectCard({ project, index, totalCards, onLiveClick }: ProjectCardPro
             <div className="w-full overflow-hidden rounded-2xl border border-text/10 flex-1 group">
               <img
                 src={project.col2Image}
-                alt={`${project.name} Hero Cover`}
+                alt={`${project.name} — 3D Hero Cover by Suman Mehta`}
+                width={800}
+                height={560}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 select-none"
                 referrerPolicy="no-referrer"
               />

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://sumanmehta.in/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sumanmehta.in/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sumanmehta.in/"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://sumanmehta.in/"/>
+    <xhtml:link rel="alternate" href="https://sumanmata.in/"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/suman-mehta/Bihar-Bijli/refs/heads/main/suman%20mehta%203D.png</image:loc>
+      <image:title>Suman Mehta - 3D Creator and Motion Designer</image:title>
+      <image:caption>Official portrait of 3D Creator and Creative Technologist Suman Mehta</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.higgs.ai/?default=1&amp;output=webp&amp;url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055451_e317bf2d-28d4-48cc-86b0-6f72f25b6327.png&amp;w=1280&amp;q=85</image:loc>
+      <image:title>Nextlevel Studio - 3D Visual Experience by Suman Mehta</image:title>
+      <image:caption>Interactive spatial 3D showcase by Suman Mehta</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.higgs.ai/?default=1&amp;output=webp&amp;url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055753_adc5dcbd-a8e6-49c0-b43a-9b030d835cea.png&amp;w=1280&amp;q=85</image:loc>
+      <image:title>Aura Brand Identity - 3D Geometric System by Suman Mehta</image:title>
+      <image:caption>Signature visual design system and materials by Suman Mehta</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.higgs.ai/?default=1&amp;output=webp&amp;url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055818_9d062121-ad7e-46b9-999a-1a6a692ef1ee.png&amp;w=1280&amp;q=85</image:loc>
+      <image:title>Solaris Digital - Photorealistic 3D Interface by Suman Mehta</image:title>
+      <image:caption>Photorealistic 3D rendering and product interface by Suman Mehta</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://sumanmata.in/</loc>
+    <xhtml:link rel="canonical" href="https://sumanmehta.in/"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

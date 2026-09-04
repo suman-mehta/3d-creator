@@ -28,7 +28,10 @@ export default function AboutSection({ onContactClick }: AboutSectionProps) {
         <div className="absolute top-[4%] left-[1%] sm:left-[2%] md:left-[4%] w-[120px] sm:w-[160px] md:w-[210px]">
           <img
             src={getFigmaUrl("moon_icon.11395d36.png")}
-            alt="3D Decorative Moon"
+            alt="3D Decorative Moon asset rendered by Suman Mehta"
+            width={210}
+            height={210}
+            loading="lazy"
             className="w-full h-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
             referrerPolicy="no-referrer"
           />
@@ -38,7 +41,10 @@ export default function AboutSection({ onContactClick }: AboutSectionProps) {
         <div className="absolute bottom-[8%] left-[3%] sm:left-[6%] md:left-[10%] w-[100px] sm:w-[140px] md:w-[180px]">
           <img
             src={getFigmaUrl("p59_1.4659672e.png")}
-            alt="3D Abstract Object"
+            alt="3D Abstract Object crafted by Suman Mehta"
+            width={180}
+            height={180}
+            loading="lazy"
             className="w-full h-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
             referrerPolicy="no-referrer"
           />
@@ -57,7 +63,10 @@ export default function AboutSection({ onContactClick }: AboutSectionProps) {
         <div className="absolute top-[4%] right-[1%] sm:right-[2%] md:right-[4%] w-[120px] sm:w-[160px] md:w-[210px]">
           <img
             src={getFigmaUrl("lego_icon-1.703bb594.png")}
-            alt="3D Decorative Lego"
+            alt="3D Decorative Lego model by Suman Mehta"
+            width={210}
+            height={210}
+            loading="lazy"
             className="w-full h-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
             referrerPolicy="no-referrer"
           />
@@ -67,7 +76,10 @@ export default function AboutSection({ onContactClick }: AboutSectionProps) {
         <div className="absolute bottom-[8%] right-[3%] sm:right-[6%] md:right-[10%] w-[130px] sm:w-[170px] md:w-[220px]">
           <img
             src={getFigmaUrl("Group_134-1.2e04f3ce.png")}
-            alt="3D Geometry Group"
+            alt="3D Geometry Group rendered by Suman Mehta"
+            width={220}
+            height={220}
+            loading="lazy"
             className="w-full h-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
             referrerPolicy="no-referrer"
           />
@@ -84,7 +96,7 @@ export default function AboutSection({ onContactClick }: AboutSectionProps) {
               className="hero-heading font-black uppercase leading-none tracking-tight select-none"
               style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
             >
-              About me
+              About me <span className="sr-only">— Suman Mehta 3D Creator &amp; Creative Technologist</span>
             </h2>
           </FadeIn>
         </div>

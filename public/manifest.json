@@ -1,0 +1,16 @@
+{
+  "short_name": "Suman Mehta",
+  "name": "Suman Mehta — 3D Creator & Motion Designer",
+  "description": "Portfolio of Suman Mehta — 3D Creator, Motion Designer, and Creative Technologist.",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/suman-mehta/Bihar-Bijli/refs/heads/main/suman%20mehta%203D.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0C0C0C",
+  "theme_color": "#0C0C0C",
+  "display": "standalone"
+}
