@@ -12,6 +12,7 @@
 
   <p align="center">
     <a href="https://sumanmehta.in/"><img src="https://img.shields.io/badge/🌐_Official_Portfolio-sumanmehta.in-00D4FF?style=for-the-badge&labelColor=0a0a0a" alt="Official Website sumanmehta.in" /></a>
+    <a href="https://www.linkedin.com/in/suman-mehta-in/"><img src="https://img.shields.io/badge/LinkedIn-suman--mehta--in-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a0a0a" alt="LinkedIn Profile" /></a>
     <a href="https://x.com/itz_suman_mehta"><img src="https://img.shields.io/badge/Twitter/X-@itz__suman__mehta-black?style=for-the-badge&logo=x&logoColor=white&labelColor=0a0a0a" alt="Twitter Profile" /></a>
     <a href="https://www.instagram.com/suman_mehta.me"><img src="https://img.shields.io/badge/Instagram-@suman__mehta.me-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=0a0a0a" alt="Instagram Profile" /></a>
     <a href="https://wa.me/917739105800"><img src="https://img.shields.io/badge/WhatsApp-Connect-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=0a0a0a" alt="WhatsApp Contact" /></a>
@@ -68,6 +69,7 @@ This repository serves as the official source code for **[sumanmehta.in](https:/
   "url": "https://sumanmehta.in/",
   "jobTitle": "3D Creator, Motion Designer & Creative Technologist",
   "sameAs": [
+    "https://www.linkedin.com/in/suman-mehta-in/",
     "https://github.com/suman-mehta",
     "https://suman-mehta.github.io/",
     "https://suman-mehta.github.io/My-website-/",
@@ -93,6 +95,7 @@ This repository serves as the official source code for **[sumanmehta.in](https:/
 ## 📬 Connect & Collaborate
 
 * **Website**: [https://sumanmehta.in/](https://sumanmehta.in/)
+* **LinkedIn**: [suman-mehta-in](https://www.linkedin.com/in/suman-mehta-in/)
 * **Email**: [sumankumardphs438@gmail.com](mailto:sumankumardphs438@gmail.com)
 * **X / Twitter**: [@itz_suman_mehta](https://x.com/itz_suman_mehta)
 * **Instagram**: [@suman_mehta.me](https://www.instagram.com/suman_mehta.me)

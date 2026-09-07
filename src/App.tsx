@@ -12,7 +12,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import ContactFormModal from "./components/ContactFormModal";
 import SlopDiagnostics from "./components/SlopDiagnostics";
 import { motion, AnimatePresence } from "motion/react";
-import { Sparkles, ArrowRight, Instagram, Twitter, Github, Heart, Check } from "lucide-react";
+import { Sparkles, ArrowRight, Instagram, Twitter, Github, Linkedin, Heart, Check } from "lucide-react";
 
 export default function App() {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -83,6 +83,16 @@ export default function App() {
                 title="Suman Mehta on GitHub"
               >
                 <Github className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/suman-mehta-in/"
+                target="_blank"
+                rel="me noreferrer"
+                className="hover:text-primary transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none rounded"
+                aria-label="Connect with Suman Mehta on LinkedIn"
+                title="Connect with Suman Mehta on LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href="https://x.com/itz_suman_mehta"
