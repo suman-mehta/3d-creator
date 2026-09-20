@@ -21,6 +21,5 @@ Allow: /
 Disallow: /src/
 Disallow: /node_modules/
 
-# Canonical Sitemaps
+# Canonical Sitemap
 Sitemap: https://sumanmehta.in/sitemap.xml
-Sitemap: https://sumanmata.in/sitemap.xml

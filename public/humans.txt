@@ -10,4 +10,3 @@ Location: Katihar, Bihar, India
 Standards: HTML5, CSS3, ESNext, Schema.org
 Components: React 19, Tailwind CSS, Motion
 Canonical: https://sumanmehta.in/
-Alternate: https://sumanmata.in/

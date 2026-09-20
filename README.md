@@ -29,7 +29,6 @@
 He specializes in custom-coded spatial 3D web environments, photorealistic rendering, physics-driven animations, and signature visual brand systems. His work bridges computational geometry and modern web technology to replace standard static layouts with interactive visual storytelling.
 
 * **Primary Canonical Webpage**: [https://sumanmehta.in/](https://sumanmehta.in/)
-* **Alternate Domain**: [https://sumanmata.in/](https://sumanmata.in/)
 * **Entity Type**: [`Person`](https://schema.org/Person) (`@id: https://sumanmehta.in/#person`)
 * **Role**: 3D Creator, Motion Designer & Creative Technologist
 * **Location**: Katihar, Bihar, India 🇮🇳
